@@ -7,50 +7,48 @@
 <body>
     <form >
        <fieldset>
-            <legend></legend>
-         <table border="1">
-                <thead>
-                    <th colspan="2">회원정보입력</th>
-                </thead>
-
+            <legend>회원정보입력</legend>
+            <table border="1">
                 <tbody>
                     <colgroup>
                         <col width="200">
+                        <col width="200">
                     </colgroup>
 
-                        <tr><th colspan="2" scope="colgroup" >＊표시는 필수 입력 사항입니다.</th>
-                        </tr>
+                    <caption>＊표시는 필수 입력 사항입니다.</caption>
 
-                        <tr>
-                                <th scope="row"><label for="name">사용자 이름</label></th>
-                                <td ><input type="text" id="name"></td>
                         </tr>
-
                         <tr>
-                                <th scope="row"><label for="id">아이디</label></th>
-                                <td ><input type="text" id="id">
-                                        <input type="button" value="중복확인"><br />
-                                         <em>-영문, 숫자 조합으로 6~20자까지 사용가능합니다.<br />
-                                            -첫 글자는 영문으로 설정해 주십시오.</em>
+                            <th scope="row"><label for="name">사용자 이름</label></th>
+                            <td ><input type="text" id="name" /></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="id">아이디</label></th>
+                            <td ><input type="text" id="id" />
+                                 <input type="button" value="중복확인" /><br />
+                                 <em>-영문, 숫자 조합으로 6~20자까지 사용가능합니다.<br />
+                                    -첫 글자는 영문으로 설정해 주십시오.</em>
+                            </td>
+                        </tr>
+                        <tr>
+                                <th scope="row"><label for="pw">비밀번호</label></th>
+                                <td ><input type="text" id="pw" /><br />
+                                <em>-영문, 숫자 조합으로 8~20자까지 사용가능합니다.(영문은 대소문자 구분)<br />
+                                     -유출되기 쉬운 비밀번호는 등록할 수 없습니다.(예:111, abcd, password 등)</em>
                                 </td>
                         </tr>
-                                <tr>
-                                    <th scope="row"><label for="pw">비밀번호</label></th>
-                                    <td ><input type="text" id="pw"><br />
-                                    <em>-영문, 숫자 조합으로 8~20자까지 사용가능합니다.(영문은 대소문자 구분)<br />
-                                       -유출되기 쉬운 비밀번호는 등록할 수 없습니다.(예:111, abcd, password 등)</em>
-                                     </td>
+                        <tr>
+                                <th scope="row"><label for="pwok">비밀번호 확인</label></th>
+                                <td ><input type="text" id="pwok" /></td>
                         </tr>
 
                         <tr>
-                            <th scope="row"><label for="pwok">비밀번호 확인</label></th>
-                                <td ><input type="text" id="pwok"></td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row"><label for="email">이메일</label></th>
-                                <td ><input type="text" id="email"> @ <label for="emaill"><input type="text"></label>
-                                    <select id="emaill">
+                                <th scope="row"><label for="email">이메일</label></th>
+                                <td ><input type="text" id="email" /> @
+                                     <label for="emaill">
+                                     <input type="text" />
+                                     </label>
+                                     <select id="emaill">
                                         <option>직접입력</option>
                                         <option>naver.com(네이버)</option>
                                         <option>nate.com(네이트)</option>
@@ -61,15 +59,16 @@
                                     </select>
                                 </td>
                         </tr>
-
                         <tr>
                             <th scope="row"><label for="number">연락처</label></th>
-                                <td><input type="text" id="number"> - <input type="text"> - <input type="text"></td>
+                            <td><input type="text" id="number"> -
+                                <input type="text"> -
+                                <input type="text">
+                            </td>
                         </tr>
-
                         <tr>
                             <th scope="row"><label for="phone">휴대전화</label></th>
-                                <td><select id="phone">
+                            <td><select id="phone">
                                     <option>010</option>
                                     <option>011</option>
                                     <option>016</option>
@@ -78,27 +77,23 @@
                                     <option>019</option>
                                 </select>
                                     - <input type="text">
-                                      -  <input type="text">
-                                  </td>
+                                    - <input type="text">
+                            </td>
                         </tr>
-
                         <tr>
                             <th scope="row"><label for="address">주소</label></th>
-                                <td ><input type="text" id="address"> - <input type="text"> <input type="button" value="주소찾기"><br />
-                                <input type="text"><br />
-                                <input type="text"></td>
+                            <td ><input type="text" id="address"> -
+                                 <input type="text">
+                                 <input type="button" value="주소찾기"><br />
+                                 <input type="text"><br />
+                                 <input type="text"></td>
                         </tr>
                         <tr>
                             <th colspan="2">
                                 <input type="submit" value="회원가입">
                             </th>
                         </tr>
-
                 </tbody>
-
-
-
-
             </table>
         </fieldset>
     </form>
