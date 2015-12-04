@@ -5,8 +5,9 @@
     <title>tabel_member</title>
 </head>
 <body>
-   <fieldset>
-
+    <form >
+       <fieldset>
+            <legend></legend>
          <table border="1">
                 <thead>
                     <th colspan="2">회원정보입력</th>
@@ -32,7 +33,7 @@
                                         -영문, 숫자 조합으로 6~20자까지 사용가능합니다.<br />
                                             -첫 글자는 영문으로 설정해 주십시오.
                                 </td>
-                        </tr> 
+                        </tr>
                                 <tr>
                                     <th scope="row"><label for="pw">비밀번호</label></th>
                                     <td ><input type="text" id="pw"></td>
@@ -45,8 +46,8 @@
 
                         <tr>
                             <th scope="row"><label for="email">이메일</label></th>
-                                <td ><input type="text" id="email"> @ <input type="text">
-                                    <select>
+                                <td ><input type="text" id="email"> @ <label for="emaill"><input type="text"></label>
+                                    <select id="emaill">
                                         <option>직접입력</option>
                                         <option>naver.com(네이버)</option>
                                         <option>nate.com(네이트)</option>
@@ -60,12 +61,12 @@
 
                         <tr>
                             <th scope="row"><label for="number">연락처</label></th>
-                                <td scope="col"><input type="text" id="number"> - <input type="text"> - <input type="text"></td>
+                                <td><input type="text" id="number"> - <input type="text"> - <input type="text"></td>
                         </tr>
 
                         <tr>
-                            <th scope="row"><label for="phone" id="number">휴대전화</label></th>
-                                <td><select>
+                            <th scope="row"><label for="phone">휴대전화</label></th>
+                                <td><select id="phone">
                                     <option>010</option>
                                     <option>011</option>
                                     <option>016</option>
@@ -96,7 +97,8 @@
 
                                     </tr>
                             </tfoot>
-        </table>
-    </fieldset>
+            </table>
+        </fieldset>
+    </form>
 </body>
 </html>
